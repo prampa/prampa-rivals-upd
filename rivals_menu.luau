@@ -493547,7 +493547,7 @@ do
         { title = 'Radyoda Neşet', file = 'song7.ogg', duration = 171.1 },
     }
     local MUSIC_VOLUME = 0.250
-    local BUILD_ID = '95738e8f'
+    local BUILD_ID = 'f21b0cce'
     local POLL_SECONDS = 20
 
     local env = getgenv and getgenv() or _G
@@ -493796,17 +493796,31 @@ do
             table.insert(roots, env.Library.ScreenGui)
         end
 
-        local parent = guiParent()
-        local ok, children = pcall(function()
-            return parent:GetChildren()
+        -- gethui() only covers the hidden layer.  the menu can be parented in
+        -- PlayerGui, in which case nothing here would ever find it.
+        local parents = { guiParent() }
+
+        local okPlayer, playerGui = pcall(function()
+            return LocalPlayer and LocalPlayer:FindFirstChild('PlayerGui')
         end)
-        if ok then
-            for _, child in ipairs(children) do
-                if child:IsA('ScreenGui')
-                    and child.Name ~= ISLAND_NAME
-                    and child.Name ~= WATERMARK_NAME
-                    and not table.find(roots, child) then
-                    table.insert(roots, child)
+        if okPlayer and playerGui then
+            table.insert(parents, playerGui)
+        end
+
+        for _, parent in ipairs(parents) do
+            if parent then
+                local ok, children = pcall(function()
+                    return parent:GetChildren()
+                end)
+                if ok then
+                    for _, child in ipairs(children) do
+                        if child:IsA('ScreenGui')
+                            and child.Name ~= ISLAND_NAME
+                            and child.Name ~= WATERMARK_NAME
+                            and not table.find(roots, child) then
+                            table.insert(roots, child)
+                        end
+                    end
                 end
             end
         end
