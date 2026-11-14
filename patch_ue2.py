@@ -3923,6 +3923,9 @@ do
         local WAIT_CAP = 4
         local WATCHDOG = 25
 
+        local MODE = tostring(env.UE_SHIM or 'safe')
+        local FULL = MODE == 'full'
+
         local S = {
             subs = {},
             misses = {},
@@ -3930,7 +3933,7 @@ do
             console = {},
             errorText = nil,
             aggressive = true,
-            enabled = true,
+            enabled = FULL,
             hooked = false,
             reported = false,
         }
@@ -4208,21 +4211,23 @@ do
         local outerPrint = print
         local outerWarn = warn
 
-        env.print = function(...)
-            captureConsole('print', ...)
-            return outerPrint(...)
-        end
-        env.warn = function(...)
-            captureConsole('warn', ...)
-            return outerWarn(...)
-        end
+        pcall(function()
+            env.print = function(...)
+                captureConsole('print', ...)
+                return outerPrint(...)
+            end
+            env.warn = function(...)
+                captureConsole('warn', ...)
+                return outerWarn(...)
+            end
+        end)
 
         -------------------------------------------------------------------
         -- hook
         -------------------------------------------------------------------
 
         local function buildWrappers(baseIndex)
-            for _, key in ipairs({ 'FindFirstChild', 'FindFirstChildOfClass', 'WaitForChild', 'GetService' }) do
+            for _, key in ipairs({ 'FindFirstChild', 'FindFirstChildOfClass', 'WaitForChild' }) do
                 local ok, fn = pcall(function()
                     return baseIndex(game, key)
                 end)
@@ -4235,7 +4240,10 @@ do
                 wrappers.FindFirstChild = function(self, name, recursive)
                     local value = originals.FindFirstChild(self, name, recursive)
                     if value == nil then
-                        local hit, why = resolve(self, name)
+                        local hit, why
+                        pcall(function()
+                            hit, why = resolve(self, name)
+                        end)
                         if hit then
                             recordSub('ffc', self, name, hit.Name, why)
                             return hit
@@ -4254,7 +4262,10 @@ do
                     end
                     local value = originals.WaitForChild(self, name, limit)
                     if value == nil then
-                        local hit, why = resolve(self, name)
+                        local hit, why
+                        pcall(function()
+                            hit, why = resolve(self, name)
+                        end)
                         if hit then
                             recordSub('wait', self, name, hit.Name, why)
                             return hit
@@ -4270,18 +4281,6 @@ do
                     local value = originals.FindFirstChildOfClass(self, class)
                     if value == nil then
                         recordMiss('class', self, class)
-                    end
-                    return value
-                end
-            end
-
-            if originals.GetService then
-                wrappers.GetService = function(self, name)
-                    local ok, value = pcall(function()
-                        return originals.GetService(self, name)
-                    end)
-                    if not ok or value == nil then
-                        recordMiss('service', self, name)
                     end
                     return value
                 end
@@ -4473,27 +4472,50 @@ do
         -- public surface
         -------------------------------------------------------------------
 
-        env.UE_ShimReport = function(reason)
-            return report(reason or 'manual')
+        local function export(name, value)
+            pcall(function()
+                env[name] = value
+            end)
         end
 
-        env.UE_ShimAlias = function(from, to)
+        export('UE_ShimReport', function(reason)
+            return report(reason or 'manual')
+        end)
+
+        export('UE_ShimAlias', function(from, to)
             aliases[tostring(from)] = tostring(to)
             resolveCache = setmetatable({}, { __mode = 'k' })
             outerPrint(TAG .. ': alias ' .. tostring(from) .. ' -> ' .. tostring(to))
-        end
+        end)
 
-        env.UE_ShimAggressive = function(flag)
+        export('UE_ShimAggressive', function(flag)
             S.aggressive = flag ~= false
             return S.aggressive
-        end
+        end)
 
-        env.UE_ShimOff = function()
+        export('UE_ShimOff', function()
             S.enabled = false
+        end)
+
+        S.mode = MODE
+        local okHook = false
+        if FULL then
+            okHook = install()
         end
 
-        local okHook = install()
-        outerPrint(TAG .. ': ' .. (okHook and 'hook installed' or 'hook unavailable, reporting only'))
+        outerPrint(TAG .. ': mode=' .. MODE .. '  build=' .. BUILD_ID)
+        if FULL then
+            outerPrint(TAG .. ': hook ' .. (okHook and 'installed' or 'unavailable, reporting only'))
+        end
+
+        -- written before the base boots, so a crash still leaves a fingerprint
+        if writefile then
+            pcall(writefile, 'ue_shim_boot.txt', table.concat({
+                'BOOT|' .. BUILD_ID .. '|' .. MODE .. '|' .. tostring(okHook) .. '|' .. os.date('%Y-%m-%d %H:%M:%S'),
+                'META|' .. tostring(game.PlaceId) .. '|' .. tostring(game.GameId),
+            }, '\n'))
+            outerPrint(TAG .. ': boot file ue_shim_boot.txt')
+        end
 
         -------------------------------------------------------------------
         -- boot capture
@@ -4502,6 +4524,7 @@ do
         if type(runApplication) == 'function' then
             local originalRun = runApplication
             runApplication = function(...)
+                outerPrint(TAG .. ': entering base boot')
                 local results = table.pack(xpcall(originalRun, function(err)
                     local okTrace, trace = pcall(debug.traceback, '', 2)
                     return tostring(err) .. '\n' .. (okTrace and tostring(trace) or '')
@@ -4511,6 +4534,7 @@ do
                     pcall(report, 'boot error')
                     error(results[2], 0)
                 end
+                outerPrint(TAG .. ': base boot returned')
                 return table.unpack(results, 2, results.n)
             end
         end

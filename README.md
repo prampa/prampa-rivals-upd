@@ -3,21 +3,38 @@
 UE (Unnamed Enhancements) build with the prampa addon plus a **version-drift shim**.
 
 Rivals updated and the base stopped working. The base is a cracked, obfuscated binary —
-there is no source to patch. This build does not try to rewrite the base. It sits
-between the base and the engine and does two things:
-
-1. **resolves renames it can prove** before the base gives up on them
-2. **records everything it could not resolve**, so the next build is driven by data
+there is no source to patch. This build does not rewrite the base. It sits between the
+base and the engine, and it is staged so a crash can be attributed instead of guessed at.
 
 ## Load
 
+Safe mode (default, nothing is hooked):
+
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/prampa/prampa-rivals-upd/main/rivals_menu.luau"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/prampa/prampa-rivals-upd/main/rivals_menu.luau?v=c6c8767f"))()
 ```
 
-Build `c77df91c`.
+Full mode (shim resolves lookups):
 
-## What the shim resolves
+```lua
+getgenv().UE_SHIM = "full"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/prampa/prampa-rivals-upd/main/rivals_menu.luau?v=c6c8767f"))()
+```
+
+Build `c6c8767f`.
+
+## Modes
+
+| mode | hooks `__index` | resolves | reports | use |
+|---|---|---|---|---|
+| `safe` (default) | no | no | yes | isolate a crash, snapshot the tree |
+| `full` | yes | yes | yes | actually patch renames at runtime |
+
+Safe mode still wraps the base's boot in `xpcall`, captures `print`/`warn`, writes
+`ue_shim_boot.txt` before the base starts, and writes the full report on error or
+after 25 s.
+
+## What full mode resolves
 
 When a lookup returns nil it retries, in this order:
 
@@ -30,19 +47,16 @@ When a lookup returns nil it retries, in this order:
 | unique match down the tree (depth 3, 700 nodes) | `Weapons` found two folders deep |
 | sole remote in the folder | `Shoot` → `Fire` when the folder holds exactly one remote |
 
-`WaitForChild` is capped at 4 s so a renamed child can no longer hang the whole
-script forever. Every substitution is logged; nothing is silent.
+`WaitForChild` is capped at 4 s so a renamed child cannot hang the script forever.
+Every substitution is logged.
 
 ## The report
-
-Written automatically when the base errors during boot, or after 25 s if no menu
-appeared:
 
 ```
 ue_shim_<timestamp>.txt
 ```
 
-in the executor workspace. Inside:
+in the executor workspace, plus `ue_shim_boot.txt` written before boot.
 
 ```
 SHIM|build|date
@@ -54,9 +68,6 @@ ERR|boot traceback
 NODE|path|class          (ReplicatedStorage depth 4, Workspace depth 3)
 ```
 
-`MISS` lines are the ones that matter: what the base asked for, where, and how
-often. `SUB` lines are what the shim already papered over.
-
 ## Commands
 
 ```lua
@@ -66,6 +77,10 @@ UE_ShimAggressive(false)     -- disable the tree-wide and sole-remote guesses
 UE_ShimOff()                 -- stop resolving, keep reporting
 ```
 
-## Previous build
+## Builds
 
-`64cd587c` — the plain addon, no shim. Kept in `prampa/prampa-rivals` main.
+| build | what |
+|---|---|
+| `c6c8767f` | safe-by-default shim, hardened exports |
+| `c77df91c` | first shim build, hook always on |
+| `64cd587c` | plain addon, no shim (`prampa/prampa-rivals`) |
