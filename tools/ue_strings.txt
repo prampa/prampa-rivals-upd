@@ -1,0 +1,3072 @@
+">
+%*
+%.
+%s
++9
+, 
+0s
+1 
+24
+2X
+3%
+: 
+;%
+<_
+<b
+=]
+>9
+??
+BR
+Cw
+Dw
+Ew
+Fw
+HP
+Id
+Jw
+Lw
+Pw
+Qw
+Sw
+To
+Tw
+Uw
+VR
+XY
+Xj
+Zw
+[]
+[^
+_G
+c1
+c2
+d 
+d3
+db
+h 
+hw
+i<
+iw
+ms
+n<
+n=
+no
+os
+ow
+px
+ui
+vw
+ww
+xw
+y!
+ bj
+ l=
+...
+120
+1v1
+2v2
+3v3
+4v4
+5v5
+<i8
+=>j
+=I>
+>=f
+>B>
+>L=
+>i8
+Add
+Air
+All
+Box
+Dot
+Fit
+Get
+Gun
+Hue
+I<d
+IOS
+Ice
+Idx
+IsA
+MB1
+MB2
+Map
+Max
+Min
+Mud
+Out
+Sat
+Set
+Sky
+T= 
+Top
+Uri
+Vib
+[C]
+abs
+api
+arm
+bar
+bor
+bow
+box
+cos
+deg
+end
+esp
+exp
+fly
+fov
+fps
+get
+gun
+hit
+ice
+ids
+key
+len
+log
+lua
+max
+min
+mp3
+new
+nil
+ogg
+one
+pop
+rad
+raw
+rep
+rps
+set
+sin
+sub
+sun
+syn
+t_H
+tf2
+wav
+x=b
+yaw
+yes
+ <I3
+ =I<
+ >Bd
+ Off
+ TL=
+ in 
+%.2f
+%z+$
+&gt;
+&lt;
+.png
+0050
+< T=
+<:*X
+=h=<
+=h>>
+>>j=
+>Hh 
+>If 
+Ammo
+Beam
+Blur
+Body
+Bold
+City
+Data
+Emit
+Enum
+Fire
+Foil
+Font
+From
+Func
+Head
+Hold
+Hook
+Info
+Item
+J= =
+Kick
+Left
+Lerp
+Line
+Load
+Maid
+Main
+Maul
+Menu
+Misc
+Mode
+Name
+Neon
+NoUI
+None
+Once
+Part
+Play
+Quad
+Rain
+Rate
+Rock
+SHA1
+Salt
+Sand
+Save
+Send
+Side
+Size
+Skin
+Snow
+Stop
+Tabs
+Team
+Text
+Time
+Tool
+True
+Type
+UDim
+Unit
+Vote
+Wait
+Wood
+Wrap
+__eq
+__le
+__lt
+_new
+ammo
+aura
+band
+blur
+bnot
+bxor
+byte
+call
+char
+chat
+csgo
+data
+dead
+esp_
+f x=
+fJ< 
+fade
+file
+fill
+find
+font
+full
+g36c
+game
+glow
+gsub
+hash
+haze
+hide
+huge
+info
+init
+item
+lerp
+line
+list
+lua/
+m249
+maid
+main
+math
+misc
+mode
+moon
+mp40
+name
+next
+none
+pack
+part
+rank
+rate
+rust
+self
+size
+skin
+smol
+sort
+sway
+tabs
+task
+text
+tick
+tilt
+type
+utf8
+v222
+wait
+warn
+wrap
+zero
+ <T =
+ <jH<
+ = B 
+ =n >
+ >c39
+!!!!!
+%.10f
+%s%s 
+%s/%s
+&amp;
+.font
+.json
+1v1v1
+2v2v2
+< <J 
+< f>=
+<<<J=
+<hj=>
+<i4>I
+<x> =
+= T><
+=<h= 
+=i=<T
+=n=n=
+=x H=
+>J=>>
+>J>f=
+Black
+Brick
+Charm
+Class
+Clean
+Clear
+Clone
+Close
+Color
+Cross
+Cubic
+Decal
+Duels
+Equip
+Event
+Frame
+Glass
+Grass
+Heart
+Image
+Inner
+Input
+Inset
+Items
+Knife
+L<B <
+Label
+Level
+Light
+Melee
+Metal
+Miter
+Modal
+Model
+Modes
+Mouse
+Multi
+Other
+Outer
+Pages
+Pants
+Prime
+Quint
+Right
+Risky
+Scale
+Scope
+Shape
+Shirt
+Slate
+Slide
+Sound
+Space
+Speed
+Sword
+Teams
+Title
+ToHex
+Touch
+Trail
+UDim2
+Value
+Width
+__add
+__div
+__len
+__mod
+__mul
+__pow
+__sub
+_drop
+_type
+ak105
+bit32
+bloom
+cache
+camel
+chams
+charm
+clamp
+class
+clear
+click
+clock
+clone
+close
+color
+corny
+crypt
+debug
+defer
+delay
+error
+faces
+first
+fixed
+flags
+floor
+floss
+fonts
+frame
+getgc
+glare
+hover
+image
+inner
+knife
+label
+level
+local
+lower
+match
+melee
+other
+pairs
+pcall
+pitch
+print
+pulse
+ratio
+round
+samba
+shoot
+skies
+sound
+spawn
+speed
+split
+stars
+start
+steve
+studs
+style
+table
+toHSV
+trail
+twirl
+upper
+value
+verts
+world
+yAxis
+{DMG}
+ Color
+ jT>>>
+ l H <
+&apos;
+&quot;
+141414
+181818
+1f1f1f
+4777b6
+:%d+: 
+<>>H<=
+<>>j<J
+= b=><
+=<x b>
+=B  f<
+=BL I=
+=T>nj 
+=b><B<
+> <f<=
+>=l>x>
+>>nji7
+Accent
+Active
+AddTab
+Addons
+Always
+Angles
+Assets
+Attack
+Basalt
+Blades
+Bottom
+Button
+CFrame
+Camera
+Cancel
+Center
+Charms
+Circle
+Color3
+Combat
+Create
+Delete
+Encode
+Entity
+Events
+Fabric
+Filled
+FogEnd
+Folder
+Freeze
+GameId
+Global
+Ground
+HEALTH
+Handle
+Health
+Holder
+I3 =>=
+Italic
+Katana
+Layout
+Length
+Loaded
+Locked
+Looped
+Luraph
+Marble
+MeshId
+Normal
+Notify
+Offset
+Parent
+Pebble
+Player
+Radius
+Random
+Remove
+Resize
+Rivals
+SILENT
+SetRaw
+Size28
+Size60
+Slider
+Smooth
+Sniper
+Spawns
+Spread
+Square
+Squash
+Status
+Suffix
+Target
+Themes
+ToEnum
+Toggle
+Unload
+Update
+Values
+Verify
+Volume
+Voting
+Width0
+Width1
+Window
+ZIndex
+_Setup
+__HWID
+__call
+__iter
+__type
+_cache
+_color
+_frame
+_value
+added 
+aimbot
+assert
+assets
+attack
+base64
+bounce
+bridge
+bubble
+buffer
+cache/
+camera
+cancel
+change
+concat
+create
+custom
+damage
+decals
+decode
+delete
+desync
+device
+enable
+encode
+events
+exists
+ffffff
+fonts/
+format
+freeze
+hH d=>
+handle
+health
+images
+impact
+insert
+ipairs
+isfile
+length
+loaded
+lookAt
+lshift
+middle
+mobile
+nb=H>>
+noclip
+normal
+notify
+number
+offset
+parent
+parsed
+player
+prefix
+radius
+random
+rawget
+rawlen
+rawset
+readu8
+red...
+remove
+rivals
+rshift
+second
+select
+shared
+silent
+skybox
+slices
+sounds
+source
+spiral
+spread
+status
+streak
+string
+stroke
+suffix
+syntax
+tahoma
+target
+thread
+tracer
+typeof
+ubuntu
+unload
+unpack
+update
+volume
+wanted
+weapon
+weight
+window
+zigzag
+{NAME}
+{PART}
+ <<l > 
+ >>Bn= 
+ color 
+!Random
+#FFFFFF
+%s / %s
+/themes
+</font>
+<=ijI=H
+<Id<>L=
+=<B< i3
+=T L=>=
+=h=nI6<
+> B<f= 
+>< LI=>
+>= BI5>
+>=<h><H
+>I3<d= 
+>T LH <
+>f<>x =
+>l=>T><
+Action4
+Adornee
+Ambient
+Android
+Asphalt
+BarSide
+Buttons
+CRASHED
+CanDrag
+Changed
+Charged
+Clothes
+Compact
+Connect
+Content
+CoreGui
+Default
+Destroy
+Divider
+Drawing
+Elastic
+Enabled
+Fighter
+Gamepad
+GetRank
+Glacier
+Granite
+Graphic
+Grenade
+Hf dx >
+HitPart
+HttpGet
+Illegal
+Inverse
+Jumping
+LeftArm
+Library
+Lock UI
+MaxSize
+MinSize
+Minigun
+Modules
+Molotov
+Numeric
+OnClick
+OnEvent
+Options
+Outline
+Outward
+Padding
+PivotTo
+PlaceId
+Plastic
+Players
+Playing
+Primary
+Raycast
+Refresh
+Regular
+Remotes
+Satchel
+SetName
+SetSize
+SetText
+Sibling
+Signals
+SoundId
+Stepped
+SunRays
+Terrain
+TextBox
+Texture
+Toggled
+Toggles
+Tooltip
+UIScale
+UseItem
+Utility
+Vector2
+Vector3
+Version
+Visible
+Winners
+ZOffset
+_Recoil
+_Update
+__index
+_color1
+_color2
+_color3
+_corner
+_moving
+_radius
+_stroke
+_target
+_toggle
+assetId
+bobbing
+boolean
+bow hit
+changed
+clothes
+countlz
+countrz
+current
+decoded
+default
+delfile
+density
+destroy
+disable
+drawing
+dynamic
+effects
+enabled
+face_id
+fighter
+fromHSV
+fromRGB
+getfenv
+getgenv
+gethwid
+getinfo
+getrenv
+handler
+hovered
+images/
+is_evil
+library
+loadout
+look up
+lrotate
+minimal
+objects
+options
+outline
+primary
+ragebot
+rainbow
+ratio x
+ratio y
+readf32
+readi32
+replace
+request
+require
+reserve
+restore
+rrotate
+running
+scripts
+setfenv
+sethwid
+setinfo
+slashes
+sparkle
+staring
+storage
+tooltip
+unnamed
+utility
+visuals
+void...
+weapons
+weather
+windows
+ < T><b>
+ <>n= l=
+ =>c184=
+ >>dx<H=
+ xj><T= 
+/themes/
+< >L j >
+<><h =L=
+<B=d>>H>
+<dB<==h 
+<f><J>==
+<hb>=n<<
+<id>hn< 
+==<b<=n 
+===B<=> 
+=I4=c5 >
+><b <i5<
+>T>==n=>
+>b>=<j <
+>j<LH =<
+AddBlank
+AddColor
+AddFrame
+AddInput
+AddLabel
+Anchored
+Animator
+AutoShow
+Bar Side
+Barriers
+BasePart
+BlurSize
+Callback
+CanQuery
+CanTouch
+CellSize
+Climbing
+Concrete
+Contrast
+Controls
+Crossbow
+Distance
+DontFade
+Dropdown
+Elements
+Envelope
+FakeMass
+Finished
+Finisher
+FogColor
+FogStart
+FontFace
+FontSize
+Freefall
+Function
+GetActor
+GetFaces
+GetInner
+GetMouse
+GetPivot
+GetState
+Humanoid
+IJ=c168<
+Infinite
+Instance
+Inverted
+IsActive
+IsAiming
+IsLoaded
+IsMobile
+ItemName
+ItemType
+J><bl><j
+Keybinds
+LeftFoot
+LeftHand
+Lifetime
+Lighting
+Massless
+Material
+MeshPart
+No title
+ObjectID
+Occluded
+Override
+Pavement
+Platform
+Position
+Priority
+Register
+Registry
+Revolver
+RichText
+RightArm
+RotSpeed
+Rotation
+Rounding
+Segments
+SetValue
+Shutdown
+TabFrame
+Tabboxes
+TextSize
+TopImage
+UICorner
+UIStroke
+Velocity
+Vertical
+_Refresh
+_Tracers
+__concat
+_current
+_is_ally
+_outline
+_showfov
+_storage
+_visible
+ambience
+anti aim
+applied 
+auto ban
+changing
+cloneref
+clothing
+computer
+contrast
+crossbow
+d =i i  
+disabled
+distance
+drawings
+emission
+equipped
+esp_font
+finisher
+firerate
+function
+getproto
+getstack
+gradient
+h_offset
+identity
+in order
+instance
+inverted
+isfolder
+killing 
+lY_FE.iy
+lifetime
+lighting
+material
+max ammo
+messages
+modified
+movement
+offset x
+offset y
+on_close
+on_shoot
+override
+packsize
+particle
+position
+priority
+progress
+readfile
+register
+rock out
+rotation
+rounding
+scripts/
+selected
+set_name
+setfflag
+setstack
+settings
+show fov
+sillybob
+skeleton
+skin_img
+starting
+sun rays
+textures
+the worm
+to_cache
+tonumber
+tostring
+ui scale
+unloaded
+unnamed/
+velocity
+writeu32
+x smooth
+y smooth
+{WEAPON}
+  i1x<<<>
+ fx<<c47>
+ i2=l>H<>
+ missing 
+%s-%s.png
+/settings
+< =<H=>b=
+<==>H  B 
+<>B  =B=<
+<>H=>j=L=
+<I <>d>j>
+<c94=H> <
+<f>><J<i<
+=< >x=i2<
+== L>T<>d
+=h j>=x=<
+=l>H>n=<<
+><T <<<h<
+><x=c186=
+>= j=>T<=
+>I4 <f=n<
+>c180>x  
+Accessory
+Activated
+ActiveTab
+AddButton
+AddSlider
+AddTabbox
+AddToggle
+AddVertex
+Alignment
+AllowNull
+Animation
+ApplyWrap
+BackColor
+CONSTANTS
+Character
+ClassName
+ClockTime
+Container
+Copy Flag
+Cosmetics
+Crosshair
+DepthMode
+EquipItem
+Explosion
+FOVOffset
+FillColor
+Flashbang
+FontColor
+FontStyle
+Game Mode
+GetSpread
+Heartbeat
+Hex color
+Highlight
+HitOffset
+Increment
+Intensity
+IsKeyDown
+IsPlaying
+IsSliding
+ItemAdded
+ItemIndex
+ItemModel
+ItemTypes
+JoinQueue
+KeyPicker
+Keypoints
+Limestone
+Magnitude
+MainColor
+MaxHealth
+Menu bind
+MoveSpeed
+OnChanged
+QuickShot
+RGB color
+Replicate
+RightFoot
+RightHand
+RiskColor
+RobloxGui
+Sandstone
+ScaleType
+Scrambled
+ScreenGui
+Secondary
+Segmented
+SetActive
+SetFolder
+SetValues
+SideTasks
+SortOrder
+StarCount
+TextLabel
+TextureID
+TextureId
+Thickness
+Threshold
+Throwable
+TimeScale
+Toggle UI
+TotalTabs
+TweenInfo
+UE_LOADED
+UIPadding
+Unlock UI
+VideoLink
+ViewModel
+Watermark
+WebSocket
+Whitelist
+Windy Day
+_effects_
+_fov_fill
+_left_arm
+_material
+_rotation
+_segments
+animation
+attackers
+backwards
+character
+chat mode
+chat spam
+chat_spam
+color end
+config.iy
+coroutine
+crosshair
+d n>L< <<
+end color
+esp_chams
+esp_flag_
+esp_name_
+explosion
+first ban
+fly speed
+fromScale
+full auto
+gamesense
+gradients
+healthbar
+highlight
+hitmarker
+ignore if
+instances
+intensity
+lightning
+listfiles
+long legs
+look down
+minecraft
+monocraft
+name type
+neverlose
+no handle
+no spread
+nosniy...
+particles
+positions
+safe_call
+secondary
+sensei...
+set_items
+set_stats
+skin_data
+smoothing
+stabbing 
+targeting
+thickness
+threshold
+timescale
+traceback
+viewmodel
+visualize
+void spam
+whitelist
+wholesome
+wireframe
+workspace
+writefile
+yaw angle
+ <f  >x><>
+ =>=d<=f  
+ =d<>n <=x
+ ><j<c192>
+... (void)
+/settings/
+<=HIc31=L 
+<H<==n => 
+<j<B= <I=H
+= j >J><L<
+=<I3  j>>=
+=d<b<>T>>=
+=j<i=<H<==
+> c197fB> 
+><=L==T>= 
+>=I5<T< <j
+>c157 b h<
+>n ix >j><
+AddDivider
+AddToolTip
+AddTooltip
+ApplyTheme
+ApplyToTab
+Archivable
+Atmosphere
+Attachment
+Background
+BlockInput
+BlurEffect
+BorderMode
+Brightness
+CameraData
+CanCollide
+CanvasSize
+CastShadow
+ChildAdded
+ClientDuel
+ClientItem
+Connection
+Contraband
+Copy color
+DamagePart
+Destroying
+Disconnect
+DisplayELO
+DoubleJump
+FaceCamera
+FilterType
+FireServer
+FontWeight
+ForceField
+GetHitPart
+GetObjects
+GetPlayers
+GetService
+GetSetting
+GiveSignal
+Groupboxes
+GuiService
+Heavy Rain
+HitboxBody
+HitboxHead
+Horizontal
+HurtEffect
+ImageLabel
+InputBegan
+InputEnded
+IsDragging
+IsFinished
+IsGrounded
+Item Color
+JSONDecode
+JSONEncode
+JustLanded
+LT_R_RRT_H
+LT_R_RRT_W
+LeafyGrass
+LeftTabbox
+Load theme
+LookVector
+LowerTorso
+Main Color
+MouseEnter
+MouseLeave
+PaddingTop
+PlayerList
+Position X
+Position Y
+RBXGeneral
+ReloadType
+RemoveFace
+RespawnNow
+RightShift
+RobotoMono
+RunService
+Saturation
+SetHitPart
+SetLibrary
+ShapeInOut
+ShapeStyle
+Sort Order
+SourceSans
+SwordColor
+SwordSpeed
+TabPadding
+Text Color
+TextBounds
+TextButton
+TextColor3
+TextDamage
+Theme list
+TimeLength
+TopSurface
+UIGradient
+UpperTorso
+ViewModels
+Visibility
+WRD_LOADED
+WeaponSlot
+WoodPlanks
+__namecall
+__newindex
+__tostring
+_destroyed
+_highlight
+_last_args
+_pov_state
+_right_arm
+_wireframe
+ammo color
+ammo style
+animations
+apply_font
+atmosphere
+attacking 
+auto queue
+bloom_size
+brightness
+c96= <H ln
+characters
+controller
+create_bar
+disconnect
+duel_cache
+exploiters
+fade style
+fill image
+fromObject
+fromOffset
+fromstring
+get_client
+get_server
+hip bounce
+hit chance
+hit sounds
+hype dance
+indicators
+is_ragebot
+islclosure
+item scale
+j>< c231 L
+jc142<b><=
+lets drive
+line dance
+loadstring
+makefolder
+match_axis
+message...
+multiplier
+name color
+nil  nil  
+notify hit
+particle_1
+projectile
+protectgui
+ranked 1v1
+ranked 2v2
+ranked 3v3
+saturation
+script_key
+second ban
+setupvalue
+silent aim
+skin_cache
+spawn_time
+take the l
+target hud
+text style
+tint color
+triggerbot
+underscore
+viewmodels
+ nb =c223>>
+%.([^%.]+)$
+<  c190<>H=
+<=n ==b<h=>
+<>bH=>B J <
+<h>T>=ix<==
+<n >>J<<B <
+= <I=d  =b 
+=<c148<><IH
+=<f =>c149=
+=h>=x>==<J=
+>>Ihc169i=>
+>i c128B><H
+AccentColor
+AddDropdown
+AddGroupbox
+AddToFilter
+AddTriangle
+AdjustSpeed
+AlwaysOnTop
+AmmoReserve
+AnchorPoint
+AnimationId
+BlastRadius
+BlindEffect
+BloomEffect
+BottomImage
+CameraState
+CanvasGroup
+CellPadding
+Cobblestone
+ColorPicker
+Config list
+Config name
+Connections
+Controllers
+CrackedLava
+CreateLabel
+DisplayName
+DoubleClick
+DuelerAdded
+EVON_LOADED
+EasingStyle
+EnumLibrary
+FieldOfView
+FirstPerson
+Force Color
+FullyAiming
+GetChildren
+GetPlatform
+GetPosition
+HeavyAttack
+HolderFrame
+HttpService
+HudRegistry
+IMAGE_SCALE
+ImageButton
+ImageColor3
+IsCrouching
+IsEquipping
+ItemLibrary
+ItemRemoved
+KRNL_LOADED
+KeybindMenu
+LayoutOrder
+Load config
+LoadDefault
+LocalPlayer
+MainEmitter
+Match color
+Matchmaking
+MenuKeybind
+MeshContent
+MuzzleFlash
+NumberRange
+OnHighlight
+Orientation
+PaddingLeft
+Paste color
+PickWeapons
+Placeholder
+PlayerAdded
+PrimaryPart
+Reflectance
+RegistryMap
+RemoteEvent
+Replication
+RightTabbox
+RightVector
+Riot Shield
+SaveDefault
+SaveManager
+Set Default
+SetArmsData
+SetControls
+SetRotation
+SetValueRGB
+ShopLibrary
+SpecialMesh
+SpecialType
+SpreadAngle
+StartAiming
+SurfaceType
+Text Length
+TextService
+TextWrapped
+TextureMode
+ThemeUpdate
+ThirdPerson
+Tokyo Night
+VoteOptions
+_StartThrow
+_UpdateWrap
+__metatable
+_aim_spring
+_attack_num
+_body_color
+_fill_color
+_fov_moving
+anti katana
+attack mode
+auto select
+ban weapons
+bodybuilder
+bridge only
+camera_blur
+checkcaller
+color start
+config list
+connections
+copy colors
+custom_font
+dance break
+decay color
+empty color
+esp_weapon_
+float32step
+forget time
+fov changer
+full wiggle
+getupvalues
+health lerp
+health text
+hit effects
+hit_effects
+i=  <l<b  =
+l <>i1H>>=>
+load config
+lua/configs
+lua/scripts
+manipulated
+newcclosure
+out of ammo
+pitch angle
+pixel arial
+player_name
+proggy tiny
+protect_gui
+remove fuse
+self_damage
+setconstant
+setreadonly
+shoot delay
+shoot sound
+shrink fade
+silent mode
+slide boost
+solid color
+start color
+target part
+underground
+unsupported
+ L==<d><=b >
+.PickWeapons
+<<<f=<Bf=T==
+<= l=b< nJ=<
+= =<B==<f>d<
+= B=<L <<J>>
+=<B>j  B>l><
+=h> >h<=  I 
+><T <=BL=>> 
+>hH=i1<><T=<
+AbsoluteSize
+Accent Color
+AddKeyPicker
+BillboardGui
+BorderColor3
+COMET_LOADED
+CameraCFrame
+ChangedFuncs
+ChildRemoved
+ClientEntity
+Color picker
+CornerRadius
+CosmeticSlot
+Create theme
+CreatePopout
+CreateWindow
+DamageEffect
+Delete Theme
+Dependencies
+DiamondPlate
+DisplayOrder
+EquippedItem
+FacingCamera
+FinalResults
+GenerateGUID
+GetAttribute
+GetHitOffset
+I=i>Lj>=<H>>
+IgnoreObject
+InvokeServer
+ItemNameText
+Keybind Menu
+KeybindFrame
+L= b=<i3<b<<
+LeftGroupbox
+LeftLowerArm
+LeftLowerLeg
+LeftUpperArm
+LeftUpperLeg
+LineJoinMode
+LocalFighter
+Menu keybind
+MenuFadeTime
+MouseButton1
+MoveVelocity
+MuzzleCFrame
+OZONE_LOADED
+OpenedFrames
+OutlineColor
+PaddingRight
+Refresh list
+RemoveTopbar
+RemoveUnused
+RoundStarted
+SafeCallback
+Set autoload
+SetHitOffset
+SettingValue
+ShirtGraphic
+ShirtTexture
+SoundService
+TextChannels
+TextureSpeed
+ThemeManager
+TimePosition
+Transparency
+TweenService
+UIGridLayout
+UIListLayout
+UsePartColor
+UserSettings
+ViewportSize
+WaitForChild
+[%s] %s (%s)
+_FinishThrow
+_SetPOVState
+__tostring l
+_fov_outline
+_sway_spring
+ammo divider
+anti_aim_yaw
+arm_material
+aspect ratio
+auto respawn
+auto_select_
+autoban_maps
+bounce speed
+c165= >JJ>T=
+c212>=h = j<
+change sound
+closest part
+color middle
+culling mode
+custom sound
+damage ratio
+decode error
+entity_added
+esp_effects_
+esp_material
+esp_skeleton
+fov settings
+frosty flair
+getconstants
+getmetatable
+hookfunction
+http_request
+info spoofer
+invalid file
+isourclosure
+kicking feet
+lay floating
+manipulation
+max distance
+middle color
+movement_fly
+muzzle flash
+name spoofer
+name_spoofer
+object scale
+override fps
+proggy clean
+ragebot text
+ragebot_mode
+real_drawing
+reloading...
+save_manager
+self_effects
+setclipboard
+setmetatable
+show targets
+skin_changed
+skybox_value
+solar system
+spoof device
+staring text
+third person
+transparency
+unnamed/core
+visible only
+zesty sturdy
+ =j><c190 =T 
+255, 255, 255
+<<>J==<bj L><
+<= c10>><BJ<=
+<=<x d<<b   b
+<>d >x=l=J=l>
+<c201   i< J<
+=<h<>=I8I >> 
+=f=I2<J =HH=>
+=n=L <<c120< 
+>< <j<>h =f =
+>H<<i1> >=h< 
+AddConnection
+AddLeftTabbox
+AddToRegistry
+Are you sure?
+AutoloadLabel
+AutomaticSize
+BindableEvent
+BottomSurface
+BuiltInThemes
+ClientFighter
+ColorSequence
+Configuration
+Copied color!
+CorrodedMetal
+Create config
+CurrentCamera
+Custom themes
+CustomNametag
+Delete config
+DependencyBox
+DuelInterface
+DuelerRemoved
+EntityChanged
+ExtentsOffset
+FLUXUS_LOADED
+FONT_PROGRESS
+FillDirection
+FloorMaterial
+GetCameraData
+GetCameraSway
+GetTextBounds
+GlobalShadows
+InsertService
+IsFullyAiming
+IsLocalPlayer
+IsTranslucent
+ItemInterface
+LOAD_SILENTLY
+LightEmission
+LoadAnimation
+LoadingScreen
+Make gradient
+MakeDraggable
+MakeResizable
+MouseKeyboard
+MoveDirection
+Not specified
+Notifications
+OnClientEvent
+Outline Color
+OverrideColor
+PantsTemplate
+PlatformStand
+PlayAnimation
+PlaybackSpeed
+PlayerScripts
+RaycastParams
+RenderStepped
+Reset Default
+RightGroupbox
+RightLowerArm
+RightLowerLeg
+RightUpperArm
+RightUpperLeg
+SeasonLibrary
+SetHSVFromRGB
+ShirtTemplate
+Smoke Grenade
+SmoothPlastic
+StartPosition
+StartShooting
+StopAnimation
+SunRaysEffect
+SwordMaterial
+TRIGON_LOADED
+TextureLength
+ToOrientation
+ToggleKeybind
+TryLeaveQueue
+TweenPosition
+UserInputType
+UserInterface
+ViewportFrame
+WatermarkText
+[LEGIT] Magma
+_GenerateMaps
+_GetWalkSpeed
+_LocalTracers
+_PlayFinisher
+_deflect_hash
+_fov_rotation
+aimbot_color1
+aimbot_color2
+aimbot_color3
+aimbot_radius
+aimbot_toggle
+autoban_first
+backstabbing 
+base64_decode
+bloom_enabled
+bounding mode
+cham settings
+clonefunction
+customization
+d=f=>=c160> <
+divider color
+dolphin dance
+esp_box_color
+esp_distance_
+esp_flag_font
+esp_healthbar
+esp_name_font
+esp_name_type
+esp_show_team
+font override
+fortnite font
+gangnam style
+get_fill_data
+health prefix
+healthbar end
+images/ue.png
+ishwidspoofed
+map ban delay
+on_shoot_bulk
+override_only
+plasma pistol
+position lerp
+preview sound
+ragebot style
+rbxassetid://
+rconsoleprint
+reaction time
+refresh modes
+reserve color
+self_effects_
+silent_color1
+silent_color2
+silent_color3
+silent_radius
+silent_toggle
+take me under
+target_tracer
+through walls
+weapon filter
+weapon_filter
+weather_value
+ ==x=B<=H<=J>=
+ >b=>>l<nI3>T=
+ customization
+ jc224=B<=I< B
+:file_folder: 
+<<<x= <n  ==x 
+<font color="#
+=c174= I1<=H =
+>=n<f< =H=J>>>
+>c255>= nj> H>
+>l>c8<=j= L===
+AddColorPicker
+AddRightTabbox
+CantDragForced
+CanvasPosition
+Catholic Cross
+CharacterAdded
+CollisionGroup
+ColorShift_Top
+CursorPosition
+DevicePlatform
+FindFirstChild
+GetDarkerColor
+GetDescendants
+IgnoreGuiInset
+LightInfluence
+LoadLocalAsset
+MouseCrosshair
+NextUnitVector
+NumberSequence
+Orthodox Cross
+OwnableWeapons
+PlayerRemoving
+PlayerVelocity
+RaycastResults
+RenderPriority
+ScrollBarInset
+ScrollingFrame
+SetCurrentSlot
+SetWindowTitle
+Shows Keybinds
+StartReloading
+SunAngularSize
+TextXAlignment
+TextYAlignment
+UnionOperation
+WeldConstraint
+WrapController
+ZIndexBehavior
+[LEGIT] Winter
+_impact_sphere
+_local_fighter
+_outline_color
+_recoil_spring
+aimbot_keybind
+aimbot_outline
+aimbot_showfov
+ambience_value
+anti flashbang
+anti_aim_pitch
+arcade servers
+arm appearance
+arm_body_color
+autoban_second
+ban random map
+chat_spam_mode
+chat_spam_text
+crosshair_lerp
+custom tracers
+delay position
+distance color
+entry_returned
+esp_body_color
+esp_fill_color
+esp_fill_image
+esp_flag_style
+esp_remove_all
+esp_world_fade
+esp_world_font
+esp_world_name
+failed to load
+getconnections
+getcustomasset
+ghost floating
+healthbar type
+idle animation
+impending doom
+in development
+indicator_ammo
+indicator_font
+indicator_lerp
+is_from_loader
+jump animation
+jump smoothing
+lighting_bool_
+lighting_color
+limit distance
+line one color
+line two color
+max ammo color
+monocraft bold
+part blacklist
+phantom forces
+picked_up_drop
+plasma machine
+plasma shotgun
+ragebot status
+ragebot_weapon
+rbxassetid://0
+recoil percent
+resize outline
+rotation speed
+shoot attempts
+silent_keybind
+silent_outline
+silent_showfov
+skybox_changed
+skybox_disable
+skybox_enabled
+smallest pixel
+start offset x
+start offset y
+start position
+still standing
+sunrays_spread
+targeting_part
+unnamed/rivals
+unnamed/themes
+velocity speed
+voided players
+weather_color_
+weld to player
+ to all weapons
+<  =f=<I < l = 
+<<j=  i1  >L<><
+<L f=<==c171 =>
+=>T= i4 <  x=<<
+> <h< =jh T<>L 
+>=c134=xT<<=>T 
+ALL FORMATTING:
+AccentColorDark
+AddLeftGroupbox
+AncestryChanged
+ApplyTextStroke
+AutoButtonColor
+BackgroundColor
+BillboardDamage
+BorderSizePixel
+ChangedCallback
+ClientViewModel
+CosmeticLibrary
+DEFAULT_WEAPONS
+DependencyBoxes
+DescendantAdded
+EasingDirection
+Electron_Loaded
+EquippedDisplay
+FramesPerSecond
+GetCameraCFrame
+GetFaceVertices
+GetMuzzleCFrame
+HasTransparency
+HitboxBodySmall
+HitboxHeadSmall
+LOAD_PERSISTENT
+MoonAngularSize
+Overwrite Theme
+ParticleEmitter
+PlaceholderText
+PlayerListSlots
+Remove autoload
+Risk Text Color
+SCRIPT_FINISHED
+SaveCustomTheme
+SetCameraCFrame
+SetMuzzleCFrame
+SyncToggleState
+TextChatService
+ViewModelOffset
+ViewportCameras
+WebsocketClient
+_idle_animation
+_is_translucent
+_material_value
+_reload_threads
+_rotation_speed
+_shoot_cooldown
+add custom text
+aimbot_fov_fill
+aimbot_fov_lerp
+always backstab
+ambience_volume
+atmosphere_haze
+auto prioritize
+auto_queue_mode
+autoban_weapons
+bind_connection
+bloom_intensity
+bloom_threshold
+chat_spam_input
+chat_spam_order
+check scoped if
+cosmetic filter
+cosmetics_cache
+current_vehicle
+dh<==T> d==J<=<
+disable clothes
+effect settings
+equip animation
+esp_bounds_type
+esp_chams_color
+esp_fill_color1
+esp_fill_color2
+esp_fill_color3
+esp_fill_moving
+esp_flag_bridge
+esp_flag_prefix
+esp_world_image
+extended custom
+extended random
+fortnite damage
+fromOrientation
+getrawmetatable
+grenade options
+healthbar start
+is_macro_server
+line four color
+local_highlight
+movement_noclip
+moving rotation
+needs_reupdated
+notify duration
+on_sound_wanted
+property_update
+protectinstance
+ragdoll_enabled
+ragdoll_keybind
+ragebot_enabled
+ragebot_keybind
+remove vignette
+replicatesignal
+restorefunction
+setrawmetatable
+shoot animation
+silent_fov_fill
+silent_fov_lerp
+slide animation
+sunrays_enabled
+target_ui_scale
+viewmodel_chams
+virtual reality
+weather_changed
+weather_color_1
+weather_color_2
+weather_color_3
+weather_enabled
+world_esp_added
+< >T d>=j> c98=f
+<>L< x><I8<c230 
+>> T><=L  hl=<l 
+AbsolutePosition
+AddDependencyBox
+AddRightGroupbox
+BackTransparency
+Background Color
+BackgroundColor3
+BindToRenderStep
+C stack overflow
+CameraController
+ClearAllChildren
+ClearTextOnFocus
+Clip Descendants
+ClipsDescendants
+Cosmetic Changer
+Created theme %q
+Deleted theme %q
+EquippedDisplays
+FallHeightToggle
+FighterInterface
+FillTransparency
+GetAnimationKeys
+GetMouseLocation
+GetTutorialState
+HumanoidRootPart
+KeybindContainer
+KeybindMenuValue
+Loaded config %q
+MouseButton1Down
+NotificationArea
+Overwrite config
+SetIgnoreIndexes
+SetTutorialState
+ShowCustomCursor
+SubspaceTripmine
+SwordReflectance
+TextDamageShadow
+TextTransparency
+TouchTransmittor
+USE_NON_SSL_NODE
+UserGameSettings
+UserInputService
+_CreateViewModel
+_GenerateWeapons
+_ITEMSTATUSCLONE
+_attack_cooldown
+_reload_cooldown
+_unrecoil_spring
+aimbot_smoothing
+aiming animation
+ambience_enabled
+animation player
+animation_player
+anti_aim_enabled
+arcade_auto_ammo
+atmosphere_color
+atmosphere_decay
+atmosphere_glare
+auto_load_silent
+closest position
+color correction
+copied config %q
+crosshair_bounce
+crosshair_color_
+crosshair_length
+crosshair_offset
+custom animation
+devsignature_sig
+disable on flash
+disable textures
+drawingDirectory
+effects selected
+esp_cham_changed
+esp_chams_color2
+esp_dueler_added
+esp_effects_aura
+esp_fill_changed
+esp_name_changed
+explode on throw
+healthbar middle
+hit_effects_col_
+hit_effects_weld
+identifyexecutor
+ignore protected
+indicator_colors
+isfunctionhooked
+lighting_number_
+lighting_toggle_
+line three color
+moving healthbar
+preferred weapon
+ragebot_priority
+ragebot_settings
+remove hit sound
+removed autoload
+server_indicator
+silent_hitchance
+silent_visualize
+sprint animation
+target_highlight
+viewmodel_offset
+viewmodel_recoil
+void spamming...
+:page_facing_up: 
+AnimationPriority
+BruteForceAllSlow
+CharacterRemoving
+CollectionService
+ColorShift_Bottom
+Created config %q
+Custom theme name
+Deleted config %q
+DoubleJumpRequest
+FallHeightEnabled
+FighterController
+Forest Rain Night
+GetAnimationTrack
+GetFocusedTextBox
+GetMuzzlePosition
+GetRotationCFrame
+GetViewModelImage
+GroupTransparency
+HumanoidStateType
+IS_PRIVATE_SERVER
+ImageTransparency
+Keybind Menu Mode
+KeypickerListMode
+Loaded config: %q
+Menu Transparency
+MouseButton2Click
+NotificationClips
+NotificationStyle
+PlaceholderColor3
+REQUEST_AND_CACHE
+RaycastFilterType
+RefreshConfigList
+ReplicatedStorage
+Send Notification
+SetupDependencies
+Subspace Tripmine
+SwordTransparency
+VerticalAlignment
+ViewModelAnimator
+VisibilityChanged
+_body_color_value
+_disable_textures
+_heavy_attack_num
+aimbot_fov_moving
+aimbot_match_axis
+atmosphere_offset
+auto_load_enabled
+auto_select_Melee
+autoban_map_delay
+chat_spam_enabled
+community configs
+created gradient!
+crosshair_color_1
+crosshair_color_2
+crosshair_color_3
+crosshair_color_4
+crosshair_enabled
+crosshair_outline
+delete file error
+esp_body_disables
+esp_chams_changed
+esp_color_changed
+esp_fill_rotation
+execution stopped
+explode on impact
+exploits_firerate
+fill transparency
+firetouchinterest
+fixed width scale
+french confidence
+highlight_changed
+hit_effects_col_1
+hit_effects_col_2
+hit_effects_col_3
+hit_sounds_volume
+include teammates
+indicator_ragebot
+katana deflecting
+manipulated color
+movement_flyvalue
+movement_velocity
+name_spoof_others
+name_spoofer_name
+queue_on_teleport
+ragebot_void_spam
+reset to defaults
+send notification
+sethiddenproperty
+setthreadidentity
+shoot_sound_speed
+shoot_sound_start
+silent_fov_moving
+spoof_device_type
+sunrays_intensity
+target_hit_notify
+target_ui_enabled
+too many requests
+triggerbot_scoped
+viewmodel_options
+ ><bc220 =<h= J>=>
+-3.141592653589793
+BuildConfigSection
+Clip Past Distance
+CreateThemeManager
+CurrentDuelSubject
+DamageNumberEffect
+DuelSubjectChanged
+GetClassCameraData
+GetTextBoundsAsync
+HighlightDepthMode
+LoadAutoloadConfig
+NotificationColors
+PhysicalHitboxHead
+PhysicsRepRootPart
+PlayHitmarkerSound
+ReloadCustomThemes
+RemoveFromRegistry
+ReplicationChanged
+ScrollBarThickness
+ScrollingDirection
+SimulateInputBegan
+SpectateController
+_body_transparency
+_duelers_by_player
+_equipped_displays
+_player_to_fighter
+_trajectory_visual
+aimbot_fill_color1
+aimbot_fill_color2
+aimbot_fill_color3
+aimbot_fov_outline
+arm_material_value
+atmosphere_density
+atmosphere_enabled
+attempt to index: 
+auto_queue_enabled
+camera_fov_changer
+crosshair_rotation
+crosshair_settings
+custom_tracer_fade
+custom_tracer_glow
+disable hit marker
+double jump height
+esp_chams_settings
+esp_dueler_removed
+esp_healthbar_type
+esp_material_value
+esp_world_distance
+exploits_full_auto
+exploits_no_spread
+fill customization
+highlight settings
+hit_sounds_disable
+hit_sounds_enabled
+indicator_offset_x
+indicator_offset_y
+indicator_settings
+l_fastload_enabled
+movement_maul_slam
+on_close_callbacks
+position on barrel
+position on target
+preferred material
+ragebot text color
+random custom text
+random notify text
+shoot_sound_change
+shoot_sound_volume
+silent_fill_color1
+silent_fill_color2
+silent_fill_color3
+silent_fov_outline
+skeleton thickness
+triggerbot_enabled
+triggerbot_keybind
+viewmodel_material
+viewmodel_offset_x
+viewmodel_offset_y
+viewmodel_offset_z
+/themes/default.txt
+AbsoluteContentSize
+AutomaticCanvasSize
+EquippedItemChanged
+GetTextBoundsParams
+HeavyAttackCooldown
+HorizontalAlignment
+IgnoreThemeSettings
+ImageHighResolution
+MechanicsController
+OpenPickWeaponsPage
+OutlineTransparency
+Overwrote config %q
+RBXScriptConnection
+ReplicateFromServer
+RespawnNowAnimation
+S2PhysicsSenderRate
+Set %q to auto load
+StopSprintAnimation
+WeaponStatusHandler
+_UpdateButtonStates
+aimbot_closest_part
+aimbot_fov_rotation
+aimbot_fov_settings
+anti_aim_custom_yaw
+anti_aim_floor_hide
+arcade_auto_respawn
+auto_select_Primary
+auto_select_Utility
+auto_select_enabled
+autoban_first_delay
+camera_aspect_ratio
+crawing in a circle
+crosshair_thickness
+custom_tracer_color
+custom_tracer_speed
+custom_tracer_width
+developer_feature_1
+esp_effects_changed
+esp_healthbar_speed
+esp_world_fade_mode
+esp_world_whitelist
+force_cframe_change
+grenade launcher...
+hit_effects_enabled
+hit_sounds_selected
+item_status_enabled
+matched all colors!
+movement_flykeybind
+movement_slideboost
+override appearance
+override_appearance
+silent_closest_part
+silent_fov_rotation
+silent_fov_settings
+silent_manipulation
+skin_changer_search
+test notification (
+the script persists
+triggerbot_settings
+unnamed/core/ue.png
+viewmodel_wireframe
+ to ragebot priority
+BorderStrokePosition
+ContextActionService
+EncodeCameraRotation
+ExposureCompensation
+InputSpammingEnabled
+KeypickerListVisible
+MakeDraggableOutline
+NotificationBarStyle
+NotificationPosition
+Paste config here...
+PlayerDataController
+SerializationService
+UGCValidationService
+UnbindFromRenderStep
+UpdateCameraRotation
+WorldToViewportPoint
+_cook_detonate_delay
+_override_appearance
+add_ragebot_priority
+arm_body_color_value
+arm_disable_textures
+autoban_second_delay
+custom_tracer_color2
+custom_tracer_length
+esp_body_color_value
+esp_chams_alpha_fill
+esp_effects_particle
+esp_healthbar_moving
+esp_healthbar_resize
+esp_healthbar_slices
+esp_skeleton_outline
+esp_world_lerp_speed
+esp_world_name_color
+hit_effects_material
+hit_effects_selected
+hit_effects_settings
+indicator_ammo_color
+indicator_ammo_style
+indicator_text_style
+infinite double jump
+item_remove_vignette
+item_status_override
+local_highlight_fill
+local_highlight_type
+maul slam multiplier
+outline transparency
+ragebot status color
+reaction time offset
+selected_player_view
+self_effects_changed
+spoof_device_enabled
+target_ui_item_scale
+target_ui_position_x
+target_ui_position_y
+targeting_forgettime
+third_person_enabled
+third_person_keybind
+tracer customization
+viewmodel appearance
+viewmodel_body_color
+ApplyItemStatusToText
+Auto loaded config %q
+CHECK_AND_CREATE_PATH
+ColorCorrectionEffect
+ColorSequenceKeypoint
+CosmeticViewportFrame
+FillDirectionMaxCells
+FindFirstChildOfClass
+Import from clipboard
+Loaded copied config!
+NotificationPositionX
+NotificationPositionY
+NotificationsDisabled
+Removed default theme
+VelocityPerpendicular
+_CreateTractoryVisual
+_invincibility_visual
+_last_shooting_sounds
+aimbot_delay_position
+aimbot_delay_smooth_x
+aimbot_delay_smooth_y
+aimbot_outline_color1
+aimbot_outline_color2
+aimbot_outline_color3
+anti_aim_custom_pitch
+apply selected to all
+arm_body_transparency
+auto_select_Secondary
+camera_anti_flashbang
+camera_aspect_ratio_x
+camera_aspect_ratio_y
+ce_like_loadstring_fn
+color_correction_tint
+cosmetics_skin_filter
+custom_tracer_enabled
+custom_tracer_outline
+cycle colors for text
+esp_body_transparency
+failed to encode data
+indicator_empty_color
+indicator_manipulated
+outline customization
+silent_outline_color1
+silent_outline_color2
+silent_outline_color3
+stack damage together
+target_highlight_fill
+target_highlight_type
+targeting_maxdistance
+targeting_visibleonly
+viewmodel_chams_color
+"out of ammo" if empty
+/settings/autoload.txt
+AssemblyLinearVelocity
+BackgroundTransparency
+ClientFighterCharacter
+FindFirstChildWhichIsA
+GetInstanceAddedSignal
+GetPlayerFromCharacter
+Light Rain And Thunder
+MouseIsOverOpenedFrame
+NotificationAreaHolder
+NotificationColorsFont
+NotificationColorsMain
+NumberSequenceKeypoint
+OOB_DEFAULT_WARN_DELAY
+SaveManager_ConfigList
+SaveManager_ConfigName
+TextStrokeTransparency
+ThemeManager_ThemeList
+_CameraReplicationLoop
+_GenerateRemainingBans
+animation_player_speed
+animation_player_value
+auto priority settings
+blocked by riot shield
+closest part blacklist
+cosmetics_changer_mode
+cosmetics_changer_show
+crosshair_bounce_speed
+crosshair_disable_game
+custom_tracer_emission
+custom_tracer_lifetime
+custom_tracer_selected
+disable damage numbers
+disable game crosshair
+esp_bounds_width_scale
+esp_effects_aura_value
+esp_skeleton_thickness
+esp_world_object_scale
+ff97f23b97f93792992999
+hides you in the floor
+how far it will bounce
+id... (ex: 4049646104)
+material customization
+movement_noclipkeybind
+movement_velocityvalue
+name_spoof_others_name
+override weapon status
+ragebot_shoot_attempts
+ragebot_void_spam_hide
+rbxassetid://159798309
+rbxassetid://238385471
+rbxassetid://268934012
+rbxassetid://446111271
+rbxassetid://801142899
+show cosmetics changer
+target_hit_notify_text
+target_ui_show_targets
+targeting_disableflash
+targeting_reactiontime
+triggerbot_forget_time
+triggerbot_shoot_delay
+viewmodel_chams_color2
+viewmodel_frames_value
+(%d+),%s*(%d+),%s*(%d+)
+AssemblyAngularVelocity
+ClientReplicatedClasses
+Failed to copy config: 
+Failed to load config: 
+Failed to save config: 
+GetMeshDataBinaryString
+KeybindMenuTransparency
+NotificationAnchorStyle
+Set default theme to %q
+StatisticDuelsWinStreak
+The metatable is locked
+_camera_rotation_spring
+_left_arm_shirt_texture
+arm_override_appearance
+cosmetics_wrap_inverted
+esp_chams_alpha_outline
+esp_effects_aura_color1
+esp_effects_aura_color2
+esp_effects_aura_color3
+esp_healthbar_color_end
+esp_override_appearance
+gradient_option_changed
+indicator_ragebot_style
+indicator_reserve_color
+local_highlight_changed
+local_highlight_outline
+rbxassetid://1053296915
+rbxassetid://1129547534
+rbxassetid://1274380363
+rbxassetid://1347140027
+rbxassetid://2605233927
+rbxassetid://2605256561
+rbxassetid://2916153928
+rbxassetid://2934844996
+rbxassetid://3442683707
+rbxassetid://4018616850
+rbxassetid://4155801252
+rbxassetid://4759267374
+rbxassetid://4817809188
+rbxassetid://4965083997
+rbxassetid://5043539486
+rbxassetid://5312934759
+rbxassetid://5356133579
+rbxassetid://5764885315
+rbxassetid://6333717580
+rbxassetid://6419989824
+rbxassetid://6607204501
+rbxassetid://6759025689
+rbxassetid://8255306220
+rbxassetid://8587183599
+rbxassetid://8616930816
+rbxassetid://9064263922
+rbxassetid://9066167010
+rbxassetid://9112858162
+rbxassetid://9120018695
+reset offset to default
+swap weapons when empty
+target_hit_notify_input
+targeting_limitdistance
+triggerbot_max_distance
+visible only during day
+weather_rate_multiplier
+Copy config to clipboard
+DecodeCameraRotationBulk
+Failed to delete theme: 
+FallenPartsDestroyHeight
+FindFirstAncestorOfClass
+GetPropertyChangedSignal
+HorizontalScrollBarInset
+Invalid constant index: 
+MakeDraggableUsingParent
+NotificationColorsAccent
+NotificationTransparency
+Unexpected input version
+_right_arm_shirt_texture
+aimbot_delay_smooth_jump
+animation_player_changed
+animation_player_enabled
+animation_player_keybind
+automatically grab drops
+color_correction_enabled
+crosshair_outline_color_
+crosshair_rotation_speed
+enables skeleton outline
+esp_world_distance_color
+exploits_always_backstab
+indicator_ammo_max_color
+movement_slideboostvalue
+movement_velocitykeybind
+no delay between targets
+prefer projectile weapon
+ragebot_void_spam_attack
+rbxassetid://13188153054
+rbxassetid://17225649668
+rbxassetid://17225650488
+rbxassetid://17225650859
+rbxassetid://17225651405
+rbxassetid://18803667669
+rivals updated: (AIWLGP)
+shoot_sound_change_value
+shoot_sound_custom_value
+target_highlight_outline
+triggerbot_reaction_time
+viewmodel_chams_settings
+viewmodel_material_value
+Copied flag to clipboard!
+Current autoload config: 
+DeserializeInstancesAsync
+Failed to delete config: 
+GetReleasedOwnableWeapons
+LUARMOR_AllowKeyCheckSkip
+NotificationClipsDistance
+NotificationColorsOutline
+ShowToggleFrameInKeybinds
+aimbot_fov_rotation_speed
+camera_fov_changer_amount
+color_correction_contrast
+community_selected_config
+crosshair_outline_color_1
+crosshair_outline_color_2
+crosshair_outline_color_3
+crosshair_outline_color_4
+esp_effects_color_changed
+esp_healthbar_color_start
+esp_healthbar_health_lerp
+ex: {NAME}, {DMG}, {PART}
+exploits_grenade_settings
+inverts the selected wrap
+ragebot_priority_settings
+silent_fov_rotation_speed
+triggerbot_part_blacklist
+viewmodel_frames_override
+FilterDescendantsInstances
+INVISIBLE_IGNORE_ME_THANKS
+NotificationStyleSortOrder
+esp_effects_particle_value
+esp_healthbar_color_middle
+hit_effects_disable_marker
+how the text is positioned
+local_highlight_alpha_fill
+no config file is selected
+target_hit_notify_duration
+targeting_ignore_protected
+viewmodel_body_color_value
+viewmodel_chams_alpha_fill
+viewmodel_disable_textures
+ApplyItemStatusToBackground
+Invalid config name (empty)
+SaveManager_ConfigTextInput
+affects the size of the esp
+anti_aim_floor_hide_keybind
+color_correction_brightness
+color_correction_saturation
+cosmetics_changer_save_data
+custom_tracer_position_lerp
+esp_effects_particle_color1
+esp_effects_particle_color2
+esp_effects_particle_color3
+esp_flag_health_text_color1
+esp_flag_health_text_color2
+hit_effects_disable_numbers
+how fast the size scales up
+indicator_manipulated_color
+invalid file for chat spam:
+invalid weapons for ragebot
+movement_double_jump_height
+no usable item(s)... (void)
+rbxassetid://73171328255147
+rbxassetid://80754582835479
+rbxassetid://84744842499780
+rbxassetid://86806707642727
+rbxassetid://90854697257230
+rbxassetid://93615626116769
+rbxassetid://94238795177693
+target_tracer_customization
+the delay between each shot
+viewmodel_body_transparency
+weather_lifetime_multiplier
+Application boundary changed
+Failed to overwrite config: 
+LUARMOR_SkipAntidebugDevMode
+Must set SaveManager.Library
+RecordOriginalWrapProperties
+ThemeManager_CustomThemeList
+ThemeManager_CustomThemeName
+You have not copied a color!
+_CreateMinigunShootingSounds
+esp_flag_staring_text_color1
+indicator_ammo_divider_color
+indicator_ragebot_text_color
+rbxassetid://101352470463799
+rbxassetid://103606174140721
+rbxassetid://103807799095792
+rbxassetid://107728954756412
+rbxassetid://110835852737455
+rbxassetid://112024753958948
+rbxassetid://112082806790047
+rbxassetid://117500772997394
+rbxassetid://118493257042591
+rbxassetid://126275747804327
+rbxassetid://129764254213842
+rbxassetid://132463144859699
+rbxassetid://135352615099208
+rbxassetid://136418721245851
+rbxassetid://137992510437385
+weather_timescale_multiplier
+Current autoload config: none
+SafeUpdateLocalEquippedItemID
+animation_player_custom_input
+animation_player_end_position
+end position of the animation
+how long it stays in void for
+local_highlight_alpha_outline
+movement_infinite_double_jump
+movement_maul_slam_multiplier
+only if moving rotation is on
+ragebot_priority_notification
+remove accessories from clone
+viewmodel_chams_alpha_outline
+viewmodel_override_appearance
+GetCountryRegionForPlayerAsync
+buffer and bit32 are required.
+indicator_ragebot_status_color
+AddSlider: Missing slider text.
+WEAPON_EARLY_ACCESS_TIME_OFFSET
+animation_player_start_position
+cant apply weapon skins to all!
+prioritizes players for ragebot
+start position of the animation
+triggerbot_reaction_time_offset
+AddInput: Missing `Text` string.
+Failed to load autoload config: 
+b6956594687d0095f5afdd3e2a2056ad
+original colors | phantom forces
+qwertyuiopasdfghjklzxcvbnm098765
+targeting_closest_part_blacklist
+AddSlider: Missing default value.
+AddSlider: Missing maximum value.
+AddSlider: Missing minimum value.
+Execution made no progress: loop 
+not enough colors for a gradient.
+set how auto priority will target
+AddSlider: Missing rounding value.
+Hit {NAME} for {DMG} in the {PART}
+Unable to cast TweenInfo to buffer
+ui/notifications dont show on load
+Failed to load community config: %q
+Invalid file name for theme (empty)
+Roblox and loadstring are required.
+automatically respawns when you die
+targeting_ignore_protected_settings
+Failed to create theme: invalid name
+Must set ThemeManager.Library first!
+overrides the viewmodels update rate
+rbxasset://fonts/families/Arial.json
+auto load ahmad - NIGGER DONT USE IT 
+grabs ammo/health drops automatically
+if ragebot is enabled, this will show
+rbxasset://fonts/families/Roboto.json
+rbxasset://fonts/families/Ubuntu.json
+rbxasset://fonts/families/Zekton.json
+AddButton: `Func` callback is missing.
+AddColorPicker: Missing default value.
+if applicable, sets the texture length
+if enabled, redirects bullets visually
+movement_double_jump_height_multiplier
+the material (if used) for the effects
+Unnamed Enhancements - .gg/enhancements
+if emission is at 0, doesnt do anything
+rivals updated, ping developers (ABSCX)
+rivals updated, ping developers (VOWMC)
+rivals updated, ping developers (WZXUQ)
+which weapon the ragebot will use first
+copys the colors from your current theme
+forces every item to be a certain status
+AddDropdown: Missing dropdown value list.
+heavy on performance with alot of players
+http://www.roblox.com/asset/?id=483231231
+selecting too many can affect performance
+Failed to reset default: delete file error
+http://www.roblox.com/asset/?id=2160514894
+http://www.roblox.com/asset/?id=4292970642
+http://www.roblox.com/asset/?id=4500324095
+http://www.roblox.com/asset/?id=4936211373
+http://www.roblox.com/asset/?id=9619665977
+chats go in order of creation, not randomly
+http://www.roblox.com/asset/?id=10131954007
+http://www.roblox.com/asset/?id=10214311282
+http://www.roblox.com/asset/?id=10713990381
+http://www.roblox.com/asset/?id=10714068222
+http://www.roblox.com/asset/?id=10714293450
+http://www.roblox.com/asset/?id=10714340543
+http://www.roblox.com/asset/?id=10714345459
+http://www.roblox.com/asset/?id=10714369624
+http://www.roblox.com/asset/?id=10714383856
+http://www.roblox.com/asset/?id=10714386947
+http://www.roblox.com/asset/?id=11192999445
+http://www.roblox.com/asset/?id=11444443576
+http://www.roblox.com/asset/?id=11509756389
+http://www.roblox.com/asset/?id=12570684846
+http://www.roblox.com/asset/?id=12977615774
+http://www.roblox.com/asset/?id=12978095818
+http://www.roblox.com/asset/?id=13163994293
+http://www.roblox.com/asset/?id=13709061409
+http://www.roblox.com/asset/?id=14925398414
+http://www.roblox.com/asset/?id=15049808173
+http://www.roblox.com/asset/?id=15845428288
+http://www.roblox.com/asset/?id=15963314052
+http://www.roblox.com/asset/?id=16440600505
+http://www.roblox.com/asset/?id=16454822275
+http://www.roblox.com/asset/?id=16552866953
+http://www.roblox.com/asset/?id=16839825760
+http://www.roblox.com/asset/?id=16857574577
+http://www.roblox.com/asset/?id=17163754319
+http://www.roblox.com/asset/?id=17360699557
+http://www.roblox.com/asset/?id=18225053113
+http://www.roblox.com/asset/?id=18959028778
+if applicable, adds a outline to the tracer
+CreateEditableMeshFromBinaryStringRobloxOnly
+invalid argument #1, expected (string) got (
+rbxasset://fonts/families/HighwayGothic.json
+6.7 seconds in and i already slimed yo bih ah
+assuming they are jumping, overrides y smooth
+get the id from the url in roblox marketplace
+if your target is manipulated, this will show
+do not use ClearTextOnFocus, use Clear instead
+how many times it will try to fire your weapon
+http://www.roblox.com/asset/?id=93303131285830
+invalid argument #2, expected (BasePart) got (
+This file needs a Roblox executor with getgenv.
+rbxasset://textures/ui/Scroll/scroll-middle.png
+the width multiplier of the fixed bounding mode
+the amount of time attacking before hiding again
+silent aim must be enabled, overrides closest part
+Owo y-you wost to da smol bean owo >_< *wiggles paws*
+SetupDependencies: Dependency is not of type `table`.
+Boi i slimed yo bih ahh 67 times, mustard drippin blud
+Failed to load paste config, did you copy it properly?
+disables the corners darkening when you aim down sight
+[Luarmor]: Use the loadstring, do not run this directly
+right click a weapon to toggle the skin changer for it.
+SetupDependencies: Dependency is missing value argument.
+if enabled, will hide notifications past a certain point
+the range used to generate a random reaction time offset
+how the ragebot fights, defaulting to gun if not possible
+if pulse is enabled, uses this as the max before flipping
+SetupDependencies: Dependency is missing element argument.
+<b>{NAME}</b>, <b>{DMG}</b>, <b>{PART}</b>, <b>{WEAPON}</b>
+sends a notification when a player is added to the priority
+time it takes to use reaction time assuming you had a target
+Hehe~ I winz! You losey-woosey! bonks u with imaginary plushie
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+Hehe~ I winz! You losey-woosey! *bonks u with imaginary plushie*
+UwU da smol beean go BRRRAAAP rawrr~ u wun no chawnce, fwenn ;w;
+forces the notification colors based on the config, not the theme
+UwU smol bean goes rawr and ur defeat goes bwah! *keyboard smashing intensifies*
+AddDropdown: Missing default value. Pass `AllowNull` as true if this was intentional.
