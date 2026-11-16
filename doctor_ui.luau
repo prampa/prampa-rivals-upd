@@ -1,11 +1,13 @@
--- doctor_ui.luau v3 — on-screen input doctor, no console, no name lookup
+-- doctor_ui.luau v4 — read the menu's own click handlers from outside
 --   loadstring(game:HttpGet("https://raw.githubusercontent.com/prampa/prampa-rivals-upd/main/doctor_ui.luau"))()
 --
--- v3 changes:
---   * finds ScreenGuis at ANY depth (folders under gethui / CoreGui / PlayerGui)
---   * finds the menu structurally (most TextButtons), never by title text
---   * counts clicks that actually REACH the menu's buttons
---   * one button disables the prampa HUD entirely
+-- v3 found the menu and showed clicks reaching its buttons. That means the
+-- failure is one step deeper: either no handler is connected, or the handler
+-- runs and dies. `getconnections` exposes those connections, and invoking the
+-- handler returns its own error text - which names whatever the update broke.
+--
+-- Button 1: how many handlers each button has.
+-- Button 2: invoke them and print the error they throw.
 
 local Players = game:GetService("Players")
 local UIS = game:GetService("UserInputService")
@@ -33,7 +35,7 @@ screen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 screen.Parent = HOST
 
 local panel = Instance.new("Frame")
-panel.Size = UDim2.fromOffset(478, 480)
+panel.Size = UDim2.fromOffset(486, 486)
 panel.Position = UDim2.fromOffset(12, 12)
 panel.BackgroundColor3 = Color3.fromRGB(10, 10, 13)
 panel.BackgroundTransparency = 0.06
@@ -59,11 +61,11 @@ title.Font = Enum.Font.GothamBold
 title.TextSize = 13
 title.TextColor3 = Color3.fromRGB(230, 230, 255)
 title.TextXAlignment = Enum.TextXAlignment.Left
-title.Text = "INPUT DOCTOR v3   build " .. tostring(getgenv().prampa_BuildID or "?")
+title.Text = "INPUT DOCTOR v4   build " .. tostring(getgenv().prampa_BuildID or "?")
 title.Parent = panel
 
 local status = Instance.new("TextLabel")
-status.Size = UDim2.new(1, -24, 0, 208)
+status.Size = UDim2.new(1, -24, 0, 220)
 status.Position = UDim2.fromOffset(12, 30)
 status.BackgroundTransparency = 1
 status.Font = Enum.Font.Code
@@ -78,16 +80,23 @@ status.Parent = panel
 local lines = {}
 local function say(text)
     lines[#lines + 1] = tostring(text)
-    if #lines > 13 then
+    if #lines > 18 then
         table.remove(lines, 1)
     end
 end
 
--- scan ------------------------------------------------------------------------
+local function render()
+    local info = {}
+    info[#info + 1] = "getconnections=" .. tostring(type(getconnections) == "function")
+    info[#info + 1] = "mouse=" .. tostring(UIS.MouseBehavior)
+    info[#info + 1] = "clicks=" .. tostring(CLICKS)
+    status.Text = table.concat(lines, "\n") .. "\n\n-- live --\n" .. table.concat(info, "\n")
+end
+
+-- find the menu ---------------------------------------------------------------
 
 local function allScreenGuis()
     local out, seen = {}, {}
-
     local roots = {}
     if pg then
         roots[#roots + 1] = pg
@@ -95,14 +104,12 @@ local function allScreenGuis()
     if HOST and HOST ~= pg then
         roots[#roots + 1] = HOST
     end
-
     pcall(function()
         local core = game:GetService("CoreGui")
         if core and core ~= pg and core ~= HOST then
             roots[#roots + 1] = core
         end
     end)
-
     for _, root in ipairs(roots) do
         pcall(function()
             for _, obj in ipairs(root:GetDescendants()) do
@@ -113,20 +120,7 @@ local function allScreenGuis()
             end
         end)
     end
-
     return out
-end
-
-local function buttonCount(gui)
-    local n = 0
-    pcall(function()
-        for _, obj in ipairs(gui:GetDescendants()) do
-            if obj:IsA("TextButton") then
-                n += 1
-            end
-        end
-    end)
-    return n
 end
 
 local function hudGui()
@@ -146,75 +140,54 @@ local function menuGui()
     local best, bestN = nil, 0
     for _, gui in ipairs(allScreenGuis()) do
         if gui ~= hud then
-            local n = buttonCount(gui)
+            local n = 0
+            pcall(function()
+                for _, obj in ipairs(gui:GetDescendants()) do
+                    if obj:IsA("TextButton") then
+                        n += 1
+                    end
+                end
+            end)
             if n > bestN then
                 best, bestN = gui, n
             end
         end
     end
     if bestN < 3 then
-        return nil, 0
+        return nil
     end
-    return best, bestN
+    return best
 end
 
-local function guiPath(gui)
-    local parts = {}
-    local node = gui
-    local ok = pcall(function()
-        while node and node ~= game do
-            table.insert(parts, 1, node.Name)
-            node = node.Parent
+local function menuButtons(limit)
+    local gui = menuGui()
+    local out = {}
+    if not gui then
+        return out
+    end
+    pcall(function()
+        for _, obj in ipairs(gui:GetDescendants()) do
+            if obj:IsA("TextButton") and obj.Visible and #out < (limit or 200) then
+                out[#out + 1] = obj
+            end
         end
     end)
-    if not ok then
-        return gui:GetFullName()
-    end
-    return table.concat(parts, "/")
-end
-
-local function summary()
-    say("layer: " .. tostring(HOST and HOST.Name) .. "   guis: " .. #allScreenGuis())
-
-    local gui, n = menuGui()
-    if gui then
-        say(("menu: %s  order=%s  enabled=%s  buttons=%d"):format(
-            gui.Name, tostring(gui.DisplayOrder), tostring(gui.Enabled), n))
-        say("  at " .. guiPath(gui))
-    else
-        say("menu: not found structurally")
-    end
-
-    local hud = hudGui()
-    if hud then
-        say(("hud: %s  enabled=%s  order=%s"):format(
-            hud.Name, tostring(hud.Enabled), tostring(hud.DisplayOrder)))
-
-        -- what inside our own HUD can eat a click?
-        local eaters = 0
-        pcall(function()
-            for _, obj in ipairs(hud:GetDescendants()) do
-                if obj:IsA("GuiButton") and obj.Visible then
-                    local s = obj.AbsoluteSize
-                    if s.X >= 400 and s.Y >= 400 then
-                        eaters += 1
-                        say(("  big button: %s %s visible=true"):format(obj.Name, obj.ClassName))
-                    end
-                end
-            end
-        end)
-        if eaters == 0 then
-            say("  no fullscreen buttons visible in hud")
-        end
-    else
-        say("hud: not found")
-    end
-
-    say("clicks reaching menu buttons: " .. tostring(CLICKS or 0))
-    say("mouse: " .. tostring(UIS.MouseBehavior))
+    return out
 end
 
 CLICKS = 0
+
+local function conns(signal)
+    local out = {}
+    if type(getconnections) ~= "function" then
+        return out
+    end
+    local ok, list = pcall(getconnections, signal)
+    if ok and type(list) == "table" then
+        return list
+    end
+    return out
+end
 
 -- buttons ---------------------------------------------------------------------
 
@@ -242,90 +215,136 @@ local function button(text, y, onClick)
         if not ok then
             say("error: " .. tostring(err))
         end
+        pcall(render)
     end)
     return b
 end
 
-button("1. find the menu (structural)", 244, function()
-    local gui, n = menuGui()
-    if not gui then
-        say("no ScreenGui has 3+ TextButtons")
-        say("=> the menu is not in PlayerGui, gethui or CoreGui")
-        return
+button("1. count handlers on menu buttons", 250, function()
+    local buttons = menuButtons(400)
+    say(("menu buttons visible: %d"):format(#buttons))
+
+    local withClick, withDown, withActivated = 0, 0, 0
+    for _, obj in ipairs(buttons) do
+        local a = #conns(obj.MouseButton1Click)
+        local b = #conns(obj.MouseButton1Down)
+        local c = #conns(obj.Activated)
+        if a > 0 then
+            withClick += 1
+        end
+        if b > 0 then
+            withDown += 1
+        end
+        if c > 0 then
+            withActivated += 1
+        end
     end
-    say(("found %s with %d buttons"):format(gui.Name, n))
-    say(guiPath(gui))
-    gui.DisplayOrder = 1999998
-    say("raised to 1999998 - try clicking it now")
+
+    say(("MouseButton1Click handlers: %d"):format(withClick))
+    say(("MouseButton1Down  handlers: %d"):format(withDown))
+    say(("Activated         handlers: %d"):format(withActivated))
+    say("")
+    say("sample:")
+    for i = 1, math.min(5, #buttons) do
+        local obj = buttons[i]
+        say(("  %s | click=%d down=%d act=%d"):format(
+            tostring(obj.Name), #conns(obj.MouseButton1Click),
+            #conns(obj.MouseButton1Down), #conns(obj.Activated)))
+    end
+    if withClick == 0 and withDown == 0 and withActivated == 0 then
+        say("")
+        say("=> NOTHING is connected. the base built the")
+        say("   menu but never bound input to it.")
+    end
 end)
 
-button("2. raise EVERY ScreenGui", 276, function()
-    local list = allScreenGuis()
-    local order = 1999000
-    for _, gui in ipairs(list) do
-        pcall(function()
-            gui.DisplayOrder = order
-        end)
-        order += 1
+button("2. run the handlers, read errors", 282, function()
+    local buttons = menuButtons(400)
+    local ran, failed = 0, 0
+    local shownErrors = 0
+
+    for _, obj in ipairs(buttons) do
+        for _, signal in ipairs({ obj.MouseButton1Click, obj.MouseButton1Down, obj.Activated }) do
+            for _, conn in ipairs(conns(signal)) do
+                local fn = conn.Function
+                if type(fn) == "function" then
+                    local ok, err = pcall(fn, 1, 1)
+                    ran += 1
+                    if not ok then
+                        failed += 1
+                        if shownErrors < 6 then
+                            shownErrors += 1
+                            local text = tostring(err)
+                            if #text > 150 then
+                                text = text:sub(1, 150) .. "..."
+                            end
+                            say("ERR " .. obj.Name .. ":")
+                            say("  " .. text)
+                        end
+                    end
+                end
+            end
+        end
     end
-    say(("raised %d ScreenGuis to the top stack"):format(#list))
-    say("did the menu wake up?")
+
+    say(("invoked %d handlers, %d threw"):format(ran, failed))
+    if ran == 0 then
+        say("=> no handler functions to run")
+    elseif failed == 0 then
+        say("=> handlers run clean; the state change")
+        say("   happens somewhere unreachable")
+    end
+    say("did anything on the menu change?")
 end)
 
-button("3. disable prampa HUD", 308, function()
+button("3. disable prampa HUD", 314, function()
     local hud = hudGui()
     if not hud then
         say("prampa HUD not found")
         return
     end
     hud.Enabled = not hud.Enabled
-    say(("prampa HUD %s (%s)"):format(hud.Enabled and "ON" or "OFF", hud.Name))
-    say("if the menu wakes up now, our HUD was the blocker")
+    say(("prampa HUD %s"):format(hud.Enabled and "ON" or "OFF"))
 end)
 
-button("4. count clicks on menu", 340, function()
+button("4. raise menu to top", 346, function()
     local gui = menuGui()
     if not gui then
-        say("menu not found, nothing to hook")
+        say("menu not found")
         return
     end
-    CLICKS = 0
-    local hooked = 0
-    pcall(function()
-        for _, obj in ipairs(gui:GetDescendants()) do
-            if obj:IsA("TextButton") and hooked < 300 then
-                local ok = pcall(function()
-                    obj.MouseButton1Down:Connect(function()
-                        CLICKS += 1
-                    end)
-                end)
-                if ok then
-                    hooked += 1
-                end
-            end
-        end
-    end)
-    say(("listening on %d buttons of %s"):format(hooked, gui.Name))
-    say("now click the menu - the counter runs live")
+    gui.DisplayOrder = 1999998
+    say("raised " .. gui.Name .. " -> 1999998")
 end)
 
-button("5. toggle game ScreenGuis", 372, function()
-    local menu = menuGui()
-    local hud = hudGui()
-    local n = 0
-    if pg then
-        for _, gui in ipairs(pg:GetChildren()) do
-            if gui:IsA("ScreenGui") and gui ~= menu and gui ~= hud and gui ~= screen then
-                gui.Enabled = not gui.Enabled
-                n += 1
-            end
+button("5. input connections in engine", 378, function()
+    local names = {
+        "InputBegan", "InputEnded", "InputChanged",
+    }
+    for _, name in ipairs(names) do
+        local ok, signal = pcall(function()
+            return UIS[name]
+        end)
+        if ok and signal then
+            say(("UIS.%s = %d conns"):format(name, #conns(signal)))
         end
     end
-    say(("toggled %d game ScreenGuis"):format(n))
-    say("did the menu wake up?")
+
+    local menu = menuGui()
+    if menu then
+        local total = 0
+        pcall(function()
+            for _, obj in ipairs(menu:GetDescendants()) do
+                if obj:IsA("GuiButton") then
+                    total += #conns(obj.MouseButton1Click) + #conns(obj.MouseButton1Down)
+                end
+            end
+        end)
+        say(("menu gui total button conns: %d"):format(total))
+    end
 end)
 
-button("6. close doctor", 404, function()
+button("6. close doctor", 410, function()
     screen:Destroy()
 end)
 
@@ -333,26 +352,7 @@ end)
 
 task.spawn(function()
     while screen.Parent do
-        local ok = pcall(function()
-            local gui, n = menuGui()
-            local hud = hudGui()
-            local info = {
-                "clicks=" .. tostring(CLICKS),
-                "mouse=" .. tostring(UIS.MouseBehavior),
-            }
-            if gui then
-                info[#info + 1] = ("menu=%s order=%s btn=%d"):format(
-                    gui.Name, tostring(gui.DisplayOrder), n)
-            else
-                info[#info + 1] = "menu=not found"
-            end
-            if hud then
-                info[#info + 1] = ("hud=%s enabled=%s"):format(hud.Name, tostring(hud.Enabled))
-            else
-                info[#info + 1] = "hud=not found"
-            end
-            status.Text = table.concat(lines, "\n") .. "\n\n-- live --\n" .. table.concat(info, "\n")
-        end)
+        local ok = pcall(render)
         if not ok then
             break
         end
@@ -360,7 +360,5 @@ task.spawn(function()
     end
 end)
 
--- first scan straight away
-pcall(summary)
-
-print("doctor_ui v3: panel up, build", tostring(getgenv().prampa_BuildID))
+pcall(render)
+print("doctor_ui v4: panel up, build", tostring(getgenv().prampa_BuildID))
